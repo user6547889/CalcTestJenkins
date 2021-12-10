@@ -17,4 +17,12 @@ public class CalculatorTest {
         assertEquals(4,r, () -> "Failssdfsdfsdfsdf");
 
     }
+
+    @Test
+    @DisplayName("TestSubstractDisplayName")
+    public void TestSub() {
+        Calculator c = new Calculator();
+        Integer r = c.add(1,-1);
+        assertEquals(0,r,() -> "Substraction Failure");
+    }
 }
